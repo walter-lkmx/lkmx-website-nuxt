@@ -23,7 +23,7 @@ export default {
   // "~@lkmx/flare/src/flare"
   css: [
     '@lkmx/flare/src/flare.scss',
-    '~/assets/sass/styles.scss'
+    '~/assets/sass/style.scss'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -36,14 +36,19 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    'nuxt-animejs',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxt/content'
+    '@nuxt/content',
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  router: {
+    middleware: ['class']
   }
 }

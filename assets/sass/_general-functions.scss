@@ -1,0 +1,9 @@
+@mixin grid($g: var(--f-gutter), $gtc: 1fr, $ai: center, $jc: center, $ji: center, $gaf: row) {
+  display: grid;
+  gap: $g;
+  align-items: $ai;
+  justify-content: $jc;
+  justify-items: $ji;
+  grid-template-columns: $gtc;
+  grid-auto-flow: $gaf;
+}

@@ -1,0 +1,145 @@
+@import "../_general-functions";
+
+
+#body-index {
+    .--flare-frame {
+      z-index: 1;
+    }
+
+    h2 {
+      color: var(--color-accent-pink);
+    }
+
+    &__intro {
+      @include spacer();
+      background: linear-gradient(90deg, var(--color-neutral-white) 0%, rgba(255, 255, 255, 0.498915) 50.11%, rgba(255, 255, 255, 0) 50.11%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    &__services {
+      &__description {
+        background-color: var(--color-neutral-white);
+        @include spacer(l, $rm: b);
+        @include gridGap(var(--f-gutter-l));
+        p {
+          width: 70%;
+          @include respond-to("<=m") {
+            width: 100%;
+          }
+        }
+      }
+
+      &__diagram {
+        @include spacer($rm: t, $rm-box-p:sides);
+        background-color: var(--color-neutral-white);
+      }
+    }
+
+    &__methodology {
+      @include spacer(l);
+      background-color: var(--color-neutral-white);
+
+      .content {
+        display: grid;
+        align-items: center;
+      }
+
+      &__description {
+        @include gridGap(var(--f-gutter-l));
+
+        @include respond-to("<=m") {
+          text-align: center;
+
+          img {
+            display: inline-block;
+          }
+        }
+
+        p {
+          width: 60%;
+
+          @include respond-to("<=m") {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    &__experience {
+      @include spacer(l, $rm-box-p: sides);
+      background-color: var(--color-neutral-white);
+      .content {
+        display: grid;
+        align-items: start;
+      }
+
+      &__diagrams {}
+
+      &__description {
+        @include gridGap(var(--f-gutter-l));
+
+        @include respond-to("<=m") {
+          padding-left: var(--f-gutter);
+          padding-right: var(--f-gutter);
+        }
+
+        p {
+          max-width: 382px;
+        }
+      }
+    }
+
+    &__technology {
+      background-color: var(--color-neutral-gray-04);
+      text-align: center;
+      @include spacer(l);
+
+      .content {
+        .box {
+          @include grid($g: var(--f-gutter-xl), $ji:center);
+
+          h4 {
+            max-width: 600px;
+            color: var(--color-neutral-gray-01);
+          }
+        }
+      }
+    }
+
+    &__vision {
+      text-align: center;
+      background-color: var(--color-neutral-white);
+      @include spacer(l);
+
+      h3 {
+        span {
+          color: var(--color-accent-pink);
+        }
+      }
+    }
+
+    &__circles {
+      text-align: center;
+      background-color: var(--color-accent-blue-01);
+      @include spacer();
+
+      img {
+        display: inline-block;
+      }
+    }
+
+    &__who-we-are {
+      display: grid;
+      align-items: center;
+      background-color: var(--color-neutral-black);
+      @include spacer(l);
+
+      &__description {
+        @include gridGap(var(--f-gutter-l));
+
+        p {
+          color: var(--color-neutral-white);
+        }
+      }
+
+    }
+  }

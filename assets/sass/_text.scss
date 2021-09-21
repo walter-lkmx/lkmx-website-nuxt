@@ -1,0 +1,40 @@
+:root {
+  //GENERAL
+  --f-default-text-color: var(--color-neutral-black);
+  --f-default-text-font: "IBM Plex Sans", sans-serif;
+  --f-mono-text-font: "IBM Plex Mono", monospace;
+  --f-default-text-size: 16px;
+  --f-paragraph-line-height: 24px;
+  --f-text-selection-color: var(--color-accent-pink);
+
+  // HEADINGS GENERAL
+  --f-default-headers-font: "Inter", sans-serif;
+  --f-default-headers-weight: 600;
+
+  // H1
+  --f-h1-text-size: 64px;
+  --f-h1-line-height: 80px;
+  --f-h1-text-weight: 800;
+  --f-h1-letter-space: 1px;
+  
+  // H2
+  --f-h2-text-size: 40px;
+  --f-h2-text-weight: 700;
+  --f-h2-line-height: 52px;
+
+  // H3
+  --f-h3-text-size: 28px;
+  --f-h3-line-height: 36px;
+
+  // H4
+  --f-h4-text-size: 20px;
+  --f-h4-line-height: 26px;
+
+  // H5
+  --f-h5-text-size: 16px;
+  --f-h5-line-height: 24px;
+
+  // H6
+  --f-h6-text-size: 12px;
+  --f-h6-line-height: 16px;
+}

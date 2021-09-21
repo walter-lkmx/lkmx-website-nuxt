@@ -1,0 +1,19 @@
+:root {
+    // Accents
+  --color-accent-yellow: rgba(255, 204, 0, 1);
+  --color-accent-cyan: rgba(86,205,242,1);
+  --color-accent-blue-01: rgba(23,36,154,1);
+  --color-accent-blue-02: rgba(0,19,193,1);
+  --color-accent-purple: rgba(115, 76, 255, 1);
+  --color-accent-pink: rgba(255, 0, 73, 1);
+  // Neutral
+  --color-neutral-black: rgba(2, 3, 28, 1);
+  --color-neutral-gray-01: rgba(101, 115, 116, 1);
+  --color-neutral-gray-02: rgba(168,178,179,1);
+  --color-neutral-gray-03: rgba(206,212,212,1);
+  --color-neutral-gray-04: rgba(246, 246, 246, 1);
+  --color-neutral-white: rgba(255, 255, 255, 1);
+
+  --button-color-blue: var(--color-accent-blue-02);
+}
+
