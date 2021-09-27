@@ -13,7 +13,7 @@
 
 ### // Ingeniería de Software
 
-Somos socios estratégicos de compañías alrededor del mundo que buscan crear innovación a través de la tecnología.
+Somos socios estratégicos de compañías alrededor del mundo que buscan crear innovación a través de la tecnología..
 
 </template>
 
