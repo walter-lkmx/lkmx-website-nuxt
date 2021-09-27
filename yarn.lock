@@ -908,6 +908,16 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
+"@fontsource/ibm-plex-sans@^4.5.1":
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/@fontsource/ibm-plex-sans/-/ibm-plex-sans-4.5.1.tgz#0aff4e48f470c1647c180255495d91a28b0a50e6"
+  integrity sha512-Jz+Jgjhrzv21MrsJbUV2sewRrCsKv51NuQFje1QWQbn2E4L1G58pxb6+H9N6EdELlvZvwBffvTYS4OWrF4r71A==
+
+"@fontsource/inter@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/inter/-/inter-4.5.0.tgz#b99e49fa178e4086250fb3df2ed6a7366c9a0cb5"
+  integrity sha512-2efK8Ru0LkuOYrEpiHPlV02YkTdIKGbezlxVNeA8/3c+tNt7P2aQPuiYYkVy7N4GA5LWSUVcLL/91MpCIjinOw==
+
 "@lkmx/flare@0.3.25":
   version "0.3.25"
   resolved "https://registry.yarnpkg.com/@lkmx/flare/-/flare-0.3.25.tgz#ee1989f474c5f057f2df294e1f068532c50d3189"
