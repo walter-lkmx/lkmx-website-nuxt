@@ -154,6 +154,7 @@ export default {
     .--flare {
       .content {
         .box {
+          padding: 13px var(--f-gutter);
           @include respond-to("<=m") {
             @include grid($gaf: column, $ji: start, $gtc: 100px 1fr);
           }
@@ -176,10 +177,10 @@ export default {
           }
           .logo-container {
             @include grid();
-            height: 88px;
+            /* height: 88px; */
+            margin-left: var(--f-gutter);
             .header__logo {
-              height: 88px;
-              padding: var(--f-gutter-s) var(--f-gutter);
+              height: 50px;
               @include respond-to("<=m") {
                 width: 88px;
                 position: absolute;
@@ -192,6 +193,10 @@ export default {
             }
           }
           .main-navigation {
+            display: flex;
+            gap: var(--f-gutter-xl);
+            height: 36px;
+            align-items: center;
             @include respond-to("<=m") {
               display: none;
               &.navIsOpen {
@@ -218,6 +223,9 @@ export default {
             a {
               font-family: var(--f-mono-text-font);
               text-decoration: none;
+              padding: 8px;
+              line-height: 20px;
+              letter-spacing: 1px;
             }
           }
         }

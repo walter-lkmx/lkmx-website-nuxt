@@ -1,5 +1,4 @@
 <!-- Hero Services -->
-
 <column id="body-index__hero-services" mode="normal">
 
 <block>
@@ -35,6 +34,14 @@ Desarrollamos plataformas resilientes, intuitivas y seguras para negocios de tod
 
 
 
+
+
+
+
+
+
+
+
 <!-- Rubbon -->
 
 <column id="body-index__services-rubbon" mode="full">
@@ -54,62 +61,111 @@ Nuestras tecnologías te ayudan a crecer mediante el incremento en tu productivi
 
 
 
-<!-- Cubes -->
-<column id="body-index__services-cubes">
 
-<block id="services__cubes-title">
+
+<!-- Services Cubes Title -->
+<column id="body-index__services-cubes-title" mode="full">
+
+<block>
 
 Diseñamos **tres servicios** que nos ayudan a desarrollar cualquier proyecto de tecnología 
 de manera ágil y flexible.
 
 </block>
 
-<block id="services__cubes-content">
+</column>
 
-<block id="services__cubes-a">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Services Cubes -->
+<column id="body-index__services-cubes" mode="full" number="3" number-m="2" number-s="1">
+
+<block> 
 
 ![Cube](./img/cube-b-and-w.png)
 
-<block id="services-cubes-title-a">
+<services-cube-title>
+
+<template v-slot:title>
 
 #### Discovery
 
+</template>
+
+<template v-slot:image>
+
 ![Arrow](./img/arrow-right.png)
 
-</block>
+</template>
+
+
+
+</services-cube-title>
 
 Nuestras soluciones comienzan mediante el estudio previo de los retos y los objetivos por cumplir. Este será el punto de inicio para el éxito del proyecto.
 
 </block>
 
-
-<block id="services__cubes-b">
+<block>
 
 ![Cube](./img/cube.png)
 
-<block id="services-cubes-title-b">
+<services-cube-title>
+
+<template v-slot:title>
 
 #### Application Development
 
+</template>
+
+<template v-slot:image>
+
 ![Arrow](./img/arrow-right.png)
 
-</block>
+</template>
+
+</services-cube-title>
 
 Con base en lo que descubrimos, creamos increíbles experiencias web y móviles que involucran manejo de datos, big data, blockchain e inteligencia artificial.
 
 </block>
 
-<block id="services__cubes-c">
+<block>
 
 ![Cube](./img/cube-support.png)
 
-<block id="services-cubes-title-c">
+<services-cube-title>
+
+<template v-slot:title>
 
 #### Application Maintenance & Support 
 
+</template>
+
+<template v-slot:image>
+
 ![Arrow](./img/arrow-right.png)
 
-</block>
+</template>
+
+</services-cube-title>
 
 Al final del desarrollo ofrecemos servicios de mantenimiento y soporte para una estabilización y transferencia exitosa
 de la plataforma.
@@ -124,8 +180,26 @@ de la plataforma.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- Lets Talk -->
-<column id="body-index__services-lets-talk">
+<column id="body-index__services-lets-talk" mode="full" number="2" number-m="1" number-s="1">
 
 <block id="services-lets-talk-content">
 
@@ -140,8 +214,6 @@ de la plataforma.
 <block id="services-lets-talk-image">
 
 ![collage-lets-talk](./img/collage-lets-talk.png)
-
-</block>
 
 </block>
 

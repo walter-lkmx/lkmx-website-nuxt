@@ -1,9 +1,30 @@
+#body-services {
+  .simple-header {
+    height: auto;
+  }
+}
 #body-index {
   &__services-rubbon {
     background: var(--color-accent-blue-01); 
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
+    min-height: max-content;
     padding: var(--f-gutter-xxl) 200px;
+    // z-index: 1;
+    @include respond-to("<=m") {
+      grid-template-columns: 1fr;
+      padding: var(--f-gutter);
+    }
+    @include respond-to(">=xxl") {
+      p {
+        width: 72%;
+        @include respond-to(">=xl") {
+          p {
+            width: 82%;
+          }
+        }
+      }
+    }
     .--flare-block {
       grid-column: 2;
       .content {
@@ -18,124 +39,105 @@
       } 
     }
   }
-
-  &__services-cubes {
-    margin-bottom: 100px;
-    .--flare-block {
-      .content {
-        .box {
-          padding: 0;   
-        }
-      } 
-    }
-    #services__cubes-title {
-      height: 158px;
-      .content {
-        .box {
-          display: grid;
-          align-items: flex-end;
-          justify-content: center;
-          height: 100%;
-          p {
-            text-align: center;
-            color: var(--color-neutral-gray-01);
-          }
-          p strong {
-            font-weight: bold;
-          }
-        }
-      }
-    }
-    #services__cubes-content {
-      padding-top: var(--f-gutter-xxl);
-      .content {
-        width: auto;
-        .box {
-          display: grid;
-          grid-template-columns: repeat(3, 336px);
-          grid-auto-flow: column;
-          gap: var(--f-gutter);
-        }
-      }
-      #services__cubes-a, #services__cubes-b, #services__cubes-c {
-        .content {
-          .box {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(3, auto);
-            gap: var(--f-gutter);
-            justify-content: center; 
-            padding: var(--f-gutter);
-            p {
-              margin-bottom: 0;
-            }
-            img {
-              margin: auto;
-              display: block;
-              margin-bottom: var(--f-gutter-l);
-            }
-            h4 {
-              color: var(--color-accent-pink);
-              margin: 0;
-              position: relative;
-            }
-            p:nth-child(3) {
-              color: var(--color-neutral-gray-01);
-              margin: 0;
-            }
-            #services-cubes-title-a, #services-cubes-title-b, #services-cubes-title-c {
-              .content {
-                width: 100%;
-                .box {
-                  display: flex;
-                  padding: 0;
-                  justify-content: space-between;
-                  height: 52px;
-                  gap: var(--f-gutter);
-                  h4 {
-                    width: 75%;
-                  }
-                  p {
-                    width: 24px; 
-                    img {
-                      width: 24px;
-                      height: 24px;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-
- &__services-lets-talk {
-  .content {
-    width: auto;
-  }
-  background: var(--color-neutral-black); 
-  display: grid;
-  grid-template-columns: 347px auto;
-  justify-content: center ;
-  padding: 0 200px;
-  @include respond-to("<=xl") {
-    justify-content: space-between;
-    padding-left: 200px;
-  }
-  p {
-    color: var(--color-neutral-white);
-  }
-  #services-lets-talk-content {
+  &__services-cubes-title {
+    height: 158px;
+    margin-bottom: var(--f-gutter-xxl);
     .content {
       .box {
         display: grid;
+        grid-template-columns: 661px;
+        align-items: flex-end;
+        justify-content: center;
+        height: 100%;
+        padding: 0;
+        @include respond-to("<=m") {
+          grid-template-columns: 1fr;
+          padding: var(--f-gutter);
+        }
+        p {
+          text-align: center;
+          color: var(--color-neutral-gray-01);
+        }
+        p strong {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  &__services-cubes {
+    display: grid;
+    justify-content: center;
+    padding: 0 auto;
+    gap: var(--f-gutter);
+    // margin-bottom: var(--f-gutter-xxxl);
+    margin-bottom: 100px;
+    @include respond-to(">=xl") {
+      grid-template-columns: repeat(3, 336px);
+    }
+    @include respond-to("<=m") {
+
+    }
+    .--flare-block {
+      .content {
+        .box {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(3, auto);
+          gap: var(--f-gutter);
+          justify-content: center; 
+          padding: var(--f-gutter);
+          p {
+            margin-bottom: 0;
+          }
+          img {
+            margin: auto;
+            display: block;
+            margin-bottom: var(--f-gutter-l);
+          }
+          h4 {
+            color: var(--color-accent-pink);
+            margin: 0;
+            position: relative;
+            letter-spacing: 0.5px;
+          }
+          p:nth-child(3) {
+            color: var(--color-neutral-gray-01);
+            margin: 0;
+            
+          }
+        }
+      } 
+    }
+  }
+  &__services-lets-talk {
+    background: var(--color-neutral-black); 
+    justify-content: end;
+    @include respond-to(">=l") {
+      grid-template-columns: 347px auto;
+      height: 650px;
+    }
+    @include respond-to(">=xl") {
+      justify-content: center;
+    }
+    
+    .content {
+      .box {
+        padding: 0;
+      }
+    }
+  #services-lets-talk-content {
+    padding-top: 120px;
+    .content {
+      width: 100%;
+      .box {
+        display: grid;
+        grid-template-columns: 1fr;
         grid-template-rows: repeat(3, auto);
-        gap: 26px;
-        padding: 120px var(--f-gutter) 120px 0;
+        gap: var(--f-gutter-l);
+        padding: 0 var(--f-gutter-l);
         p {
           margin: 0;
+          color: var(--color-neutral-white);
         }
         strong {
           font-weight: bold;
@@ -157,14 +159,19 @@
     align-self: center;
     .content {
       .box {
-        padding: 0;
+        padding: var(--f-gutter);
         img {
-          // padding: var(--f-gutter) 88px var(--f-gutter) var(--f-gutter);
-          width: 789px;
+          @include respond-to(">=xl") {
+            max-width: unset !important;
+            height: 438px;
+            margin-right: 72px;
+          }
+          // width: auto;
           height: auto;
         }
       }
-    }
+    }    
   }
- }
+  }
+
 }
