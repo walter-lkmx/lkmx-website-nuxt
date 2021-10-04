@@ -1,3 +1,8 @@
+---
+title: Jonathan
+description: Learn how to use @nuxt/content.
+---
+
 <!-- Hero Services -->
 <column id="body-index__hero-services" mode="normal">
 
