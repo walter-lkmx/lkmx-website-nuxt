@@ -1,5 +1,9 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
+  static: {
+    prefix: false
+  },
+
   target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -37,6 +41,7 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     'nuxt-animejs',
+    '@nuxtjs/google-fonts'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -50,5 +55,5 @@ export default {
 
   router: {
     middleware: ['class']
-  }
+  },
 }
