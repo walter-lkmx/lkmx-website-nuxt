@@ -64,7 +64,9 @@
           </nav>
         </section>
         <section class="simple-footer__legal">
-          <p>© LKMX Software Development 2021.</p>
+          <div class="simple-footer__legal-content">
+            <p>© LKMX Software Development 2021.</p>
+          </div>
         </section>
       </simple-footer>
     </template>
@@ -151,6 +153,8 @@ export default {
 #__nuxt {
   .simple-header {
     z-index: 10;
+    overflow: hidden;
+    height: min-content;
     .--flare {
       .content {
         .box {
@@ -195,8 +199,9 @@ export default {
           .main-navigation {
             display: flex;
             gap: var(--f-gutter-xl);
-            height: 36px;
+            /* height: 36px; */
             align-items: center;
+            padding-right: var(--f-gutter);
             @include respond-to("<=m") {
               display: none;
               &.navIsOpen {
@@ -234,7 +239,7 @@ export default {
   }
 
   .simple-footer {
-    @include spacer();
+    /* @include spacer(); */
     .--flare-frame {
       mix-blend-mode: unset !important;
       z-index: 1 !important;
@@ -242,7 +247,9 @@ export default {
     // background-color: white;
     .content {
       .box {
-        @include grid($g: var(--f-gutter-xxl), $ji: start);
+        @include grid($g: 40px, $ji: start);
+        padding: 0;
+        padding-top: var(--f-gutter-xl);
       }
     }
     // min-height: 600px;
@@ -251,22 +258,27 @@ export default {
       color: var(--color-neutral-black);
     }
     &__content {
-      @include grid($g: var(--f-gutter), $ai: start, $gtc: 1fr 1fr);
-      @include spacer(m);
+      @include grid($g: 0, $ai: start, $gtc: 520px 520px);
+      /* @include spacer(m); */
       grid-auto-flow: column;
+      /* padding: 0 var(--f-gutter-xxl); */
+      justify-self: center;
       @include respond-to("<=m") {
         @include grid($g: var(--f-gutter-xxl));
         grid-auto-flow: row;
       }
-
       &__brand {
-        @include grid($g: var(--f-gutter), $ji: start);
+        @include grid($g: var(--f-gutter-l), $ji: start);
         img {
-          width: 144px;
+          height: 48.5px;
         }
         p {
           font-family: var(--f-mono-text-font);
+          margin-bottom: 0;
+          line-height: 20px;
+          width: 90%;
         }
+        padding: var(--f-gutter);
         .social {
           @include grid();
           grid-auto-flow: column;
@@ -277,10 +289,12 @@ export default {
         }
       }
       &__navigation {
-        @include grid($ji: end, $g: var(--f-gutter));
+        @include grid($ji: end, $g: var(--f-gutter-s));
         @include respond-to("<=m") {
           @include grid($ji: start);
         }
+        padding: var(--f-gutter);
+        padding-bottom: 0;
         width: 100%;
         * {
           margin: 0;
@@ -293,12 +307,21 @@ export default {
         a {
           color: var(--color-accent-blue-02);
           text-decoration: none;
+          line-height: 20px;
         }
       }
     }
     &__legal {
+      width: 1040px;
+      padding: var(--f-gutter) 0;
+      justify-self: center;
+      &-content {
+        padding: var(--f-gutter);
+      } 
       p {
         font-family: var(--f-mono-text-font);
+        margin-bottom: 0;
+        line-height: 20px;
       }
     }
   }
