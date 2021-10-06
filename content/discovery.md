@@ -230,7 +230,7 @@ prototipos, un mapa de la funcionalidad, una arquitectura lógica de la solució
 
 ![Arrow up](./img/arrow-up.svg)
 
-Regresar a Servicios
+[Regresar a Servicios]()
 
 ![Mantenimiento](./img/cube-mantenimiento.png)
 
@@ -240,7 +240,7 @@ Regresar a Servicios
 
 ![Mantenimiento](./img/cube-application-dev.png)
 
-Regresar a Servicios
+[Application Development]()
 
 ![Arrow right](./img/arrow-right.svg)
 

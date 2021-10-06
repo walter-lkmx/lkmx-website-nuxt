@@ -60,7 +60,7 @@
   &__buttons-discovery {
     background-color: var(--color-neutral-gray-05);
     grid-template-columns: 499px 499px;
-    gap: var(--f-gutter);
+    gap: var(--f-gutter-xl);
     justify-content: center;
     align-items: center;
     .--flare-block {
@@ -75,14 +75,30 @@
 
           p {
             margin-bottom: 0;
+            font-family: var(--f-mono-text-font);
+            line-height: 20px;
+            a {
+              text-decoration: none;
+              color: var(--color-neutral-black);
+            }
           }
         }
       }
     }
     #buttons__discovery-left-button {
+      .content {
+        .box {
+          grid-template-columns: 24px 221px 64px;
+        }
+      }
     }
     #buttons__discovery-right-button {
-
+      .content {
+        .box {
+          grid-template-columns: 61px 221px 24px;
+          justify-content: end;
+        }
+      }
     }
   }
   &__planning-discovery {
