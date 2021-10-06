@@ -1,0 +1,190 @@
+.discovery {
+  overflow: hidden;
+}
+
+#body-index {
+  &__hero-discovery {
+    background: var(--color-accent-blue-01);
+    grid-template-rows: 581px;
+    .content {
+      .box {
+        display: grid;
+        grid-template-columns: 1040px;
+        padding: 0;
+        justify-content: center;
+      }
+    }
+  }
+  &__help-title {
+    height: 126px;
+    .content {
+      .box {
+        display: grid;
+        grid-template-columns: 1040px;
+        padding: 0;
+        justify-content: center;
+        height: 100%;
+        h4 {
+          align-self: end;
+          padding: var(--f-gutter);
+        }
+      }
+    }
+  }
+  &__help-sections {
+    display: grid;
+    grid-template-columns: 499px 499px;
+    justify-content: center;
+    gap: var(--f-gutter-l);
+    padding: 0;
+    padding-bottom: var(--f-gutter-xxl);
+    .content {
+      justify-content: center;
+      .box {
+      }
+    }  
+  }
+  &__diagram-discovery {
+    padding: var(--f-gutter-xxxl) 0;
+    justify-content: center;
+    .content {
+      .box {
+        padding: 0;
+        img {
+          display: block;
+          margin: auto;
+        }
+      }
+    }
+  }
+  &__buttons-discovery {
+    background-color: var(--color-neutral-gray-05);
+    grid-template-columns: 499px 499px;
+    gap: var(--f-gutter);
+    justify-content: center;
+    align-items: center;
+    .--flare-block {
+      padding: 34px 0;
+      .content {
+        .box {
+          padding: 0;
+          display: grid;
+          grid-auto-flow: column;
+          gap: var(--f-gutter);
+          align-items: center;
+
+          p {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    #buttons__discovery-left-button {
+    }
+    #buttons__discovery-right-button {
+
+    }
+  }
+  &__planning-discovery {
+    grid-template-columns: repeat(2, 520px);
+    justify-content: center;
+    gap: var(--f-gutter);
+    #planning__discovery-content {
+      .content {
+        display: grid;
+        .box {
+          display: grid;
+          gap: var(--f-gutter-xl);
+          padding: var(--f-gutter);
+          padding-right: 0;
+          align-self: center; 
+          h3 {
+            color: var(--color-neutral-gray-01);
+            font-weight: normal;
+            width: 79%;
+            margin-bottom: 0;
+            strong {
+              font-weight: var(--f-h2-text-weight);
+            }
+          }
+          p {
+            width: fit-content;
+            font-family: var(--f-mono-text-font);
+            background-color: var(--color-accent-pink);
+            padding: 11px 20px;
+            line-height: 20px;
+            a {
+              color: var(--color-neutral-white);
+              text-decoration: none;              
+            }
+          }
+        }
+      }
+    }
+    #planning__discovery-image {
+      .content {
+        .box {
+          padding: 0;
+          img {
+            max-width: unset;
+            height: 608px;
+            transform: translateX(-8px);
+          }
+        }
+      }
+    }
+  }
+  &__who-we-are-discovery {
+    background-color: var(--color-neutral-black);
+    display: grid;
+    grid-template-columns: 347px 693px;
+    grid-template-rows: 650px;
+    grid-auto-flow: column;
+    justify-content: center;
+    .--flare-block {
+      .content {
+        .box {
+        }
+      }
+    }
+    #who-we-are-description {
+      padding-top: 120px;
+      .content {
+        .box {
+          display: grid;
+          gap: var(--f-gutter-l);
+          padding-top: 0;
+          p {
+            color: var(--color-neutral-white);
+            margin-bottom: 0;
+            strong {
+              font-weight: var(--f-h2-text-weight);
+            }
+          }
+          p:last-child {
+            width: fit-content;
+            font-family: var(--f-mono-text-font);
+            background-color: var(--color-accent-pink);
+            padding: 11px 20px;
+            line-height: 20px;
+            a {
+              color: var(--color-neutral-white);
+              text-decoration: none;              
+            }
+          }
+        }
+      }
+    }
+    #who-we-are-image {
+      .content {
+        .box {
+          img {
+            max-width: unset;
+            height: 438px;
+            transform: translate(1px, 90px);
+          }
+        }
+      }
+    }
+  }
+}
