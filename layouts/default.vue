@@ -23,7 +23,7 @@
         </div>
         <nav class="main-navigation">
           <nuxt-link to="/services">Servicios</nuxt-link>
-          <nuxt-link to="/">Metodología</nuxt-link>
+          <nuxt-link to="/discovery">Metodología</nuxt-link>
           <nuxt-link to="/">Equipo</nuxt-link>
           <nuxt-link to="/">Tecnología</nuxt-link>
           <nuxt-link to="/">Contacto</nuxt-link>
