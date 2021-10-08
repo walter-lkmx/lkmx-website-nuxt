@@ -195,32 +195,23 @@ de la plataforma.
 
 
 
+<!-- Who we are -->
+<column id="body-index__who-we-are-services" mode="full">
 
+<block id="who-we-are-description">
 
-
-
-
-
-
-
-<!-- Lets Talk -->
-<column id="body-index__services-lets-talk" mode="full" number="2" number-m="1" number-s="1">
-
-<block id="services-lets-talk-content">
-
-![e-letter](./img/e-letter.png)
+![E-icon](./img/e-letter.png)
 
 **Somos ingenieros de desarrollo y de calidad de software, analistas y diseñadores.** Ágiles, apasionados y orgullosos de nuestra experiencia en proyectos de todos tamaños e industrias. 
 
-[Hablemos](/)
+[Hablemos]()
 
 </block>
 
-<block id="services-lets-talk-image">
+<block id="who-we-are-image">
 
-![collage-lets-talk](./img/collage-lets-talk.png)
+![Who-we-are-image](./img/collage-lets-talk.png)
 
 </block>
-
 
 </column>

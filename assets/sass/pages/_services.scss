@@ -109,69 +109,57 @@
       } 
     }
   }
-  &__services-lets-talk {
-    background: var(--color-neutral-black); 
-    justify-content: end;
-    @include respond-to(">=l") {
-      grid-template-columns: 347px auto;
-      height: 650px;
-    }
-    @include respond-to(">=xl") {
-      justify-content: center;
-    }
-    
-    .content {
-      .box {
-        padding: 0;
+  &__who-we-are-services {
+    background-color: var(--color-neutral-black);
+    display: grid;
+    grid-template-columns: 347px 693px;
+    grid-template-rows: 650px;
+    grid-auto-flow: column;
+    justify-content: center;
+    .--flare-block {
+      .content {
+        .box {
+        }
       }
     }
-  #services-lets-talk-content {
-    padding-top: 120px;
-    .content {
-      width: 100%;
-      .box {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, auto);
-        gap: var(--f-gutter-l);
-        padding: 0 var(--f-gutter-l);
-        p {
-          margin: 0;
-          color: var(--color-neutral-white);
-        }
-        strong {
-          font-weight: bold;
-        }
-        p:nth-child(3) {
-          background-color: var(--color-accent-pink);
-          width: fit-content;
-          padding: 11px 20px;
-          line-height: 20px;
-          a {
-            text-decoration: none;
+    #who-we-are-description {
+      padding-top: 120px;
+      .content {
+        .box {
+          display: grid;
+          gap: var(--f-gutter-l);
+          padding-top: 0;
+          p {
             color: var(--color-neutral-white);
+            margin-bottom: 0;
+            strong {
+              font-weight: bolder;
+            }
+          }
+          p:last-child {
+            width: fit-content;
+            font-family: var(--f-mono-text-font);
+            background-color: var(--color-accent-pink);
+            padding: 11px 20px;
+            line-height: 20px;
+            a {
+              color: var(--color-neutral-white);
+              text-decoration: none;              
+            }
+          }
+        }
+      }
+    }
+    #who-we-are-image {
+      .content {
+        .box {
+          img {
+            max-width: unset;
+            height: 438px;
+            transform: translate(1px, 90px);
           }
         }
       }
     }
   }
-  #services-lets-talk-image {
-    align-self: center;
-    .content {
-      .box {
-        padding: var(--f-gutter);
-        img {
-          @include respond-to(">=xl") {
-            max-width: unset !important;
-            height: 438px;
-            margin-right: 72px;
-          }
-          // width: auto;
-          height: auto;
-        }
-      }
-    }    
-  }
-  }
-
 }
