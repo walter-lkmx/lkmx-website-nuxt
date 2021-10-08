@@ -22,7 +22,7 @@ export default {
   &__hero-discovery {
     .hero-discovery__content {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 533px 507px;
       justify-content: end;
 
       .hero-discovery__description-content {
@@ -36,7 +36,8 @@ export default {
         }
         p:first-child {
           color: var(--color-accent-cyan);
-          height: 40px;
+          font-family: var(--f-mono-text-font);
+          line-height: 20px;
         }
         h1 {
           color: var(--color-accent-pink);
@@ -45,9 +46,9 @@ export default {
         }
         p:last-child {
           color: var(--color-neutral-white);
-          width: 110%;
           font-size: var(--f-h3-text-size);
           line-height: var(--f-h3-line-height);
+          width: 108%;
         }
       }
       .hero-discovery__image-content {
@@ -55,7 +56,7 @@ export default {
         img {
           max-width: inherit;
           height: 690px;
-          transform: translate(31px, -20px);
+          transform: translate(18px, -20px);
           position: absolute;
           z-index: 20;
         }

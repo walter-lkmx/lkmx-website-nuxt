@@ -266,7 +266,7 @@ prototipos, un mapa de la funcionalidad, una arquitectura lógica de la solució
 
 **Somos ingenieros de desarrollo y de calidad de software, analistas y diseñadores.** Ágiles, apasionados y orgullosos de nuestra experiencia en proyectos de todos tamaños e industrias. 
 
-[Leer Más]()
+[Hablemos]()
 
 </block>
 
