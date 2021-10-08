@@ -20,8 +20,17 @@ export default {
         display: grid;
         gap: var(--f-gutter);
         text-decoration: none;
+        &:hover {
+          h4 {
+            color: var(--color-accent-blue-01);
+          }
+          img {
+            border-block-end: 1px solid var(--color-accent-blue-01);
+          }
+        }
         p {
           margin-bottom: 0;
+          color: var(--color-neutral-gray-01);
         }
         img {
           height: 32px;
@@ -32,10 +41,6 @@ export default {
           position: relative;
           letter-spacing: 0.5px;
           height: 52px;
-        }
-        p:nth-child(2) {
-          color: var(--color-neutral-gray-01);
-          margin: 0;   
         }
       }
     }
