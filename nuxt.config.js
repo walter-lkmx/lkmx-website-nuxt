@@ -41,6 +41,7 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     'nuxt-animejs',
+    '@nuxtjs/google-fonts'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -55,4 +56,13 @@ export default {
   router: {
     middleware: ['class']
   },
+
+  // Adding Google font families: https://google-fonts.nuxtjs.org/options
+  googleFonts: {
+    families: {
+      'IBM Plex Sans': true,
+      'IBM Plex Mono': true,
+      'Inter': true,
+    }
+  }
 }
