@@ -7,23 +7,14 @@
   &__services-rubbon {
     background: var(--color-accent-blue-01); 
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 508px 532px;
     min-height: max-content;
-    padding: var(--f-gutter-xxl) 200px;
+    padding: 62px 200px;
     // z-index: 1;
+    justify-content: center;
     @include respond-to("<=m") {
       grid-template-columns: 1fr;
       padding: var(--f-gutter);
-    }
-    @include respond-to(">=xxl") {
-      p {
-        width: 72%;
-        @include respond-to(">=xl") {
-          p {
-            width: 82%;
-          }
-        }
-      }
     }
     .--flare-block {
       grid-column: 2;
@@ -34,6 +25,7 @@
             color: var(--color-neutral-white);
             line-height: 20px;
             margin: 0;
+            line-height: var(--f-paragraph-line-height);
           } 
         }
       } 
@@ -41,7 +33,6 @@
   }
   &__services-cubes-title {
     height: 158px;
-    margin-bottom: var(--f-gutter-xxl);
     .content {
       .box {
         display: grid;
@@ -64,47 +55,29 @@
       }
     }
   }
+  &__services-diagram {
+    justify-content: center;
+
+    .content {
+      .box {
+        padding: 0;
+        img {
+          display: block;
+          margin: auto;
+        }
+      }
+    }
+  }
   &__services-cubes {
     display: grid;
     justify-content: center;
-    padding: 0 auto;
+    // padding: 0 auto;
     gap: var(--f-gutter);
-    // margin-bottom: var(--f-gutter-xxxl);
     margin-bottom: 100px;
-    @include respond-to(">=xl") {
-      grid-template-columns: repeat(3, 336px);
-    }
-    @include respond-to("<=m") {
-
-    }
+    grid-template-columns: repeat(3, 336px);
     .--flare-block {
       .content {
         .box {
-          display: grid;
-          grid-template-columns: 1fr;
-          grid-template-rows: repeat(3, auto);
-          gap: var(--f-gutter);
-          justify-content: center; 
-          padding: var(--f-gutter);
-          p {
-            margin-bottom: 0;
-          }
-          img {
-            margin: auto;
-            display: block;
-            margin-bottom: var(--f-gutter-l);
-          }
-          h4 {
-            color: var(--color-accent-pink);
-            margin: 0;
-            position: relative;
-            letter-spacing: 0.5px;
-          }
-          p:nth-child(3) {
-            color: var(--color-neutral-gray-01);
-            margin: 0;
-            
-          }
         }
       } 
     }

@@ -89,6 +89,16 @@ de manera ágil y flexible.
 
 
 
+<!-- Services Diagram  -->
+<column id="body-index__services-diagram" mode="full">
+
+<block>
+
+![Diagram-project](./img/diagram-project.png)
+
+</block>
+
+</column>
 
 
 
@@ -104,76 +114,80 @@ de manera ágil y flexible.
 
 <block> 
 
-![Cube](./img/cube-b-and-w.png)
+<btn-services>
 
-<services-cube-title>
-
-<template v-slot:title>
+<template v-slot:btn-services-title>
 
 #### Discovery
 
 </template>
 
-<template v-slot:image>
-
-![Arrow](./img/arrow-right.png)
-
-</template>
-
-
-
-</services-cube-title>
+<template v-slot:btn-services-description>
 
 Nuestras soluciones comienzan mediante el estudio previo de los retos y los objetivos por cumplir. Este será el punto de inicio para el éxito del proyecto.
 
+</template>
+
+<template v-slot:btn-services-image>
+
+![Arrow](./img/arrow-right-blue.svg)
+
+</template>
+
+</btn-services>
+
 </block>
 
 <block>
 
-![Cube](./img/cube.png)
+<btn-services>
 
-<services-cube-title>
+<template v-slot:btn-services-title>
 
-<template v-slot:title>
-
-#### Application Development
+#### Application <br> Development
 
 </template>
 
-<template v-slot:image>
-
-![Arrow](./img/arrow-right.png)
-
-</template>
-
-</services-cube-title>
+<template v-slot:btn-services-description>
 
 Con base en lo que descubrimos, creamos increíbles experiencias web y móviles que involucran manejo de datos, big data, blockchain e inteligencia artificial.
 
+</template>
+
+<template v-slot:btn-services-image>
+
+![Arrow](./img/arrow-right-blue.svg)
+
+</template>
+
+</btn-services>
+
 </block>
 
 <block>
 
-![Cube](./img/cube-support.png)
+<btn-services>
 
-<services-cube-title>
+<template v-slot:btn-services-title>
 
-<template v-slot:title>
-
-#### Application Maintenance & Support 
+#### Application <br> Maintenance & Support
 
 </template>
 
-<template v-slot:image>
+<template v-slot:btn-services-description>
 
-![Arrow](./img/arrow-right.png)
-
-</template>
-
-</services-cube-title>
-
-Al final del desarrollo ofrecemos servicios de mantenimiento y soporte para una estabilización y transferencia exitosa
+Al final del desarrollo ofrecemos servicios de mantenimiento y soporte para una estabilización y transferencia exitosa <br>
 de la plataforma.
+
+</template>
+
+<template v-slot:btn-services-image>
+
+![Arrow](./img/arrow-right-blue.svg)
+
+</template>
+
+</btn-services>
 
 </block>
 

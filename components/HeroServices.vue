@@ -39,8 +39,8 @@ export default {};
 .hero-services {
   &__content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-
+    grid-template-columns: 508px 532px;
+    justify-content: center;
     @include respond-to("<=m") { 
       grid-template-columns: 1fr;
       grid-template-rows: 244px 1fr;
@@ -58,7 +58,7 @@ export default {};
       height: 674px;
       z-index: 2;
       position: absolute;
-      right: -420px;
+      right: -432px;
       top: -119px;
       @include respond-to("<=m") {
         height: 300px;
@@ -92,6 +92,7 @@ export default {};
       font-size: var(--f-default-text-size);
       line-height: 20px;
       color: var(--color-accent-cyan);
+      font-family: var(--f-mono-text-font);
     }
     h1 {
       font-weight: var(--f-h2-text-weight);
@@ -106,7 +107,7 @@ export default {};
       color: var(--color-neutral-gray-04);
       margin-bottom: 0;
       @include respond-to(">=xl") {
-        max-width: 80%;
+        /* max-width: 80%; */
       }
     }
   }
