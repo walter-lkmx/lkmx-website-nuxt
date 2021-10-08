@@ -230,7 +230,7 @@ export default {
               text-decoration: none;
               padding: 8px;
               line-height: 20px;
-              letter-spacing: 1px;
+              letter-spacing: 0px;
             }
           }
         }
@@ -276,7 +276,6 @@ export default {
           font-family: var(--f-mono-text-font);
           margin-bottom: 0;
           line-height: 20px;
-          width: 90%;
         }
         padding: var(--f-gutter);
         .social {
