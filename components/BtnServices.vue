@@ -24,7 +24,7 @@ export default {
           h4 {
             color: var(--color-accent-blue-01);
           }
-          img {
+          p:nth-child(3) {
             border-block-end: 1px solid var(--color-accent-blue-01);
           }
         }
@@ -41,6 +41,10 @@ export default {
           position: relative;
           letter-spacing: 0.5px;
           height: 52px;
+          font-weight: var(--f-h2-text-weight);
+        }
+        p:nth-child(3) {
+          width: max-content;
         }
       }
     }

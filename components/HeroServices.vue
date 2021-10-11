@@ -98,7 +98,7 @@ export default {};
       font-weight: var(--f-h2-text-weight);
       color: var(--color-accent-pink);
       line-height: 77px;
-      letter-spacing: var(--f-h1-letter-space);
+      letter-spacing: -1px;
       margin-bottom: 0;
     }
     p {
