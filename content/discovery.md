@@ -130,41 +130,6 @@ En un periodo de 2 a 4 semanas, nuestros equipos multidisciplinarios pueden real
 
 </block>
 
-<!-- <block>
-
-// Identificamos
-
-El cliente crea y gestiona la lista de requisitos 
-del proyecto, donde quedan reflejadas sus expectativas a nivel de requisitos, valor, coste y entregas.
-
-</block>
-
-<block>
-
-// Segmentamos
-
-Identificamos posibles contratiempos que podríamos encontrarnos en el camino y nos anticipamos.
-
-</block>
-
-<block>
-
-// Analizamos
-
-Segmentamos el proyecto mediante Iteraciones o Sprints, en pequeños bloques gestionables, 
-así conseguimos que los márgenes de error sean mucho menores. 
-
-</block>
-
-<block>
-
-// Solucionamos
-
-En un periodo de 2 a 4 semanas, nuestros equipos multidisciplinarios pueden realizar wireframes o 
-prototipos, un mapa de la funcionalidad, una arquitectura lógica de la solución y un release plan para la construcción de la mismas.
-
-</block> -->
-
 </column>
 
 
@@ -181,7 +146,7 @@ prototipos, un mapa de la funcionalidad, una arquitectura lógica de la solució
 
 <block>
 
-![Diagram discovery](./img/diagram-discovery.png)
+![Diagram discovery](./img/diagram-discovery-full.png)
 
 </block>
 
