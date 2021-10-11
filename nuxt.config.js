@@ -60,9 +60,9 @@ export default {
   // Adding Google font families: https://google-fonts.nuxtjs.org/options
   googleFonts: {
     families: {
-      'IBM Plex Sans': true,
+      'IBM Plex Sans': [300, 400, 500,  600, 700, 800, 900],
       'IBM Plex Mono': true,
-      'Inter': true,
+      'Inter': [400, 500,  600, 700, 800],
     }
   }
 }
