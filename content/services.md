@@ -94,7 +94,7 @@ de manera ágil y flexible.
 
 <block>
 
-![Diagram-project](./img/diagram-project.png)
+![Diagram-project](./img/diagram-project-full.png)
 
 </block>
 

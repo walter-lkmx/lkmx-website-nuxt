@@ -56,14 +56,21 @@
     }
   }
   &__services-diagram {
+    display: grid;
+    grid-template-columns: 1040px;
     justify-content: center;
-
+    overflow: hidden;
     .content {
       .box {
         padding: 0;
+        position: relative;
+        height: 650px;
         img {
-          display: block;
-          margin: auto;
+          position: absolute;
+          left: -1400px;
+          right: 0;
+          height: 650px;
+          max-width: unset !important;
         }
       }
     }
