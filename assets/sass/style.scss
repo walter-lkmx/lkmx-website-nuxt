@@ -5,8 +5,9 @@
 @import "_default-layout";
 @import "./pages/_home";
 @import "./pages/_services";
-@import "./pages/discovery";
-@import "./pages/application-development";
+@import "./pages/_discovery";
+@import "./pages/_application-development";
+@import "./pages/_application-maintenance";
 
 $mid-gray-color: #939ead;
 $layout-color: $mid-gray-color;

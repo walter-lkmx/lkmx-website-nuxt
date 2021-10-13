@@ -195,7 +195,7 @@ En un periodo de 2 a 4 semanas, nuestros equipos multidisciplinarios pueden real
 
 ![Arrow up](./img/arrow-up.svg)
 
-[Regresar a Servicios]()
+[Regresar a Servicios](/services)
 
 ![Mantenimiento](./img/cube-mantenimiento.png)
 
@@ -205,7 +205,7 @@ En un periodo de 2 a 4 semanas, nuestros equipos multidisciplinarios pueden real
 
 ![Mantenimiento](./img/cube-application-dev.png)
 
-[Application Development]()
+[Application Development](/application-development)
 
 ![Arrow right](./img/arrow-right.svg)
 

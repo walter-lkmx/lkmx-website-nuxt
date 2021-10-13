@@ -63,7 +63,7 @@ Mediante un entendimiento global de <br> usabilidad, contenido y funcionalidad <
 
 
 <!-- Help sections -->
-<column id="body-index__help-sections" mode="full">
+<column id="body-index__help-sections-app-development" mode="full">
 
 <block>
 

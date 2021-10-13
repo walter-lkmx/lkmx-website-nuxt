@@ -1,9 +1,9 @@
-.application-development {
+.app-maintenance-support {
   overflow: hidden;
 }
 
 #body-index {
-  &__hero-app-development {
+  &__hero-app-maintenance {
     background: var(--color-accent-blue-01);
     grid-template-rows: 581px;
     .content {
@@ -33,9 +33,9 @@
       }
     }
   }
-  &__help-sections-app-development {
+  &__help-sections-app-maintenance {
     display: grid;
-    grid-template-columns: 499px 499px;
+    grid-template-columns: 1040px;
     justify-content: center;
     gap: var(--f-gutter-xl);
     padding: 0;
@@ -43,11 +43,11 @@
     .content {
       justify-content: center;
       .box {
-        padding-bottom: 40px;
+        padding: 0;
       }
     }  
   }
-  &__diagram-app-development {
+  &__diagram-app-maintenance {
     padding: 0 0;
     justify-content: center;
     display: grid;
@@ -68,7 +68,7 @@
       }
     }
   }
-  &__buttons-app-development {
+  &__buttons-app-maintenance {
     background-color: var(--color-neutral-gray-05);
     grid-template-columns: 499px 499px;
     gap: var(--f-gutter-xl);
@@ -96,14 +96,14 @@
         }
       }
     }
-    #buttons__app-development-left-button {
+    #buttons__app-maintenance-left-button {
       .content {
         .box {
           grid-template-columns: 24px 221px 64px;
         }
       }
     }
-    #buttons__app-development-right-button {
+    #buttons__app-maintenance-right-button {
       .content {
         .box {
           grid-template-columns: 61px 221px 24px;
@@ -112,11 +112,11 @@
       }
     }
   }
-  &__planning-app-development {
+  &__planning-app-maintenance {
     grid-template-columns: 478px 520px;
     justify-content: center;
     gap: var(--f-gutter-xl);
-    #planning__app-development-content {
+    #planning__app-maintenance-content {
       // border: 1px solid green;
       .content {
         display: grid;
@@ -152,7 +152,7 @@
         }
       }
     }
-    #planning__app-development-image {
+    #planning__app-maintenance-image {
       .content {
         .box {
           padding: 0;
@@ -164,7 +164,7 @@
       }
     }
   }
-  &__who-we-are-app-development {
+  &__who-we-are-app-maintenance {
     background-color: var(--color-neutral-black);
     display: grid;
     grid-template-columns: 347px 693px;
