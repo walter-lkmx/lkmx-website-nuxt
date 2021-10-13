@@ -1,14 +1,19 @@
 <template>
-  <a class="btn-services" href="/">
+  <nuxt-link class="btn-services" :to="url">
     <h4><slot name="btn-services-title"></slot></h4>
     <p><slot name="btn-services-description"></slot></p>
     <slot name="btn-services-image"></slot>
-  </a>
+  </nuxt-link>
 </template>
 
 <script>
 export default {
-
+  props: {
+      url: {
+        type: String,
+        required: true,
+      },
+  },
 }
 </script>
 

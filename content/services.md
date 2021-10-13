@@ -1,5 +1,5 @@
 ---
-title: Jonathan
+title: Services
 description: Learn how to use @nuxt/content.
 ---
 
@@ -114,7 +114,7 @@ de manera ágil y flexible.
 
 <block> 
 
-<btn-services>
+<btn-services url="/discovery">
 
 <template v-slot:btn-services-title>
 
@@ -140,7 +140,7 @@ Nuestras soluciones comienzan mediante el estudio previo de los retos y los obje
 
 <block>
 
-<btn-services>
+<btn-services url="/application-development">
 
 <template v-slot:btn-services-title>
 
@@ -166,7 +166,7 @@ Con base en lo que descubrimos, creamos increíbles experiencias web y móviles 
 
 <block>
 
-<btn-services>
+<btn-services url="/application-maintenance-support">
 
 <template v-slot:btn-services-title>
 
