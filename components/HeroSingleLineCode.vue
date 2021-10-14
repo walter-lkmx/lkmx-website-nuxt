@@ -23,6 +23,7 @@ export default {
     display: grid;
     grid-template-columns: 19px 1fr;
     width: max-content;
+    height: 40px;
     p {
       margin-bottom: 0;
       line-height: 20px;

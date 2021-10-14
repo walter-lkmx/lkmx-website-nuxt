@@ -10,14 +10,15 @@ description: LKMX Website Nuxt
 
 <hero-app-development>
 
-<template v-slot:description>
-
-services <br>
-.filter((service) => service.name === ‘application-development’);
+<template v-slot:title>
 
 # Application <br> Development
 
-Mediante un entendimiento global de <br> usabilidad, contenido y funcionalidad <br> producimos increíbles experiencias en <br> aplicaciones web y móviles que involucran <br> manejo de datos, e-commerce, big data,<br> blockchain e inteligencia artificial.
+</template>
+
+<template v-slot:paragraph>
+
+Mediante un entendimiento global de usabilidad, contenido y funcionalidad producimos increíbles experiencias en aplicaciones web y móviles que involucran manejo de datos, e-commerce, big data, blockchain e inteligencia artificial.
 
 </template>
 

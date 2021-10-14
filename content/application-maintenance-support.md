@@ -10,12 +10,13 @@ description: LKMX Website Nuxt
 
 <hero-app-maintenance>
 
-<template v-slot:description>
-
-services <br>
-.filter((service) => service.name === ‘application-maintenance-support);
+<template v-slot:title>
 
 # Application <br> Maintenance <br> & Support
+
+</template>
+
+<template v-slot:paragraph>
 
 Al final del desarrollo del proyecto ofrecemos <br> servicios de mantenimiento y soporte para <br> una estabilización y transferencia exitosa de la <br> plataforma al cliente.
 

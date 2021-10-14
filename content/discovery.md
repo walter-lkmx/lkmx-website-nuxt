@@ -10,11 +10,13 @@ description: LKMX Website Nuxt
 
 <hero-discovery>
 
-<template v-slot:description>
-
-services <br> .filter((service) => service.name === ‘discovery’);
+<template v-slot:title>
 
 # Discovery
+
+</template>
+
+<template v-slot:paragraph>
 
 Nuestras soluciones comienzan mediante el estudio previo de los retos y los objetivos por cumplir, que nos guiarán a través de rutas ágiles y eficientes.
 
