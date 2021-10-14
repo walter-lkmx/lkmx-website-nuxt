@@ -192,23 +192,27 @@ De manera regular el equipo va mejorando y simplificando su forma de trabajar. C
 <!-- Buttons Application Development -->
 <column id="body-index__buttons-app-development" mode="full">
 
-<block id="buttons__app-development-left-button">
+<block>
 
-![Arrow up](./img/arrow-left.svg)
+<nav-button url="/discovery" arrow="./img/arrow-left.svg" cube="./img/cube-discovery.png" direction="left">
 
-[Discovery](/discovery)
+<template v-slot:label>
 
-![Mantenimiento](./img/cube-discovery.png)
+Discovery
 
-</block>
+</template>
 
-<block id="buttons__app-development-right-button">
+</nav-button>
 
-![Mantenimiento](./img/cube-maintenance-support.png)
+<nav-button url="/application-maintenance-support" arrow="./img/arrow-right.svg" cube="./img/cube-maintenance-support.png" direction="right">
 
-[Application <br> Maintenace & Support](/application-maintenance-support)
+<template v-slot:label>
 
-![Arrow right](./img/arrow-right.svg)
+Application <br> Maintenace & Support
+
+</template>
+
+</nav-button>
 
 </block>
 

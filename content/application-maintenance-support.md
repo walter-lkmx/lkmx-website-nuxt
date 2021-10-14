@@ -90,7 +90,7 @@ específicos del negocio.
 
 <template v-slot:description-side-b>
 
-Para proyectos con el nivel de madurez adecuado, podemos <br>utilizar waterfall para estimar la implementación de ajustes <br> específicos.
+Para proyectos con el nivel de madurez adecuado, podemos <br>utilizar   waterfall para estimar la implementación de ajustes <br> específicos.
 
 
 
@@ -161,23 +161,27 @@ Para proyectos con el nivel de madurez adecuado, podemos <br>utilizar waterfall 
 <!-- Buttons Application Maintenance & Support -->
 <column id="body-index__buttons-app-maintenance" mode="full">
 
-<block id="buttons__app-maintenance-left-button">
+<block>
 
-![Arrow up](./img/arrow-left.svg)
+<nav-button url="/application-development" arrow="./img/arrow-left.svg" cube="./img/cube-application-dev.png" direction="left">
 
-[Application <br> Maintenace & Support](/application-maintenance-support)
+<template v-slot:label>
 
-![Mantenimiento](./img/cube-application-dev.png)
+Application Development
 
-</block>
+</template>
 
-<block id="buttons__app-maintenance-right-button">
+</nav-button>
 
-![Mantenimiento](./img/cube-mantenimiento.png)
+<nav-button url="/services" arrow="./img/arrow-up.svg" cube="./img/cube-services.png" direction="right">
 
-[Ir a Servicios](/services)
+<template v-slot:label>
 
-![Arrow right](./img/arrow-up.svg)
+Ir a Servicios
+
+</template>
+
+</nav-button>
 
 </block>
 

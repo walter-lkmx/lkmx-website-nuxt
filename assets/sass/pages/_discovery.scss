@@ -68,44 +68,16 @@
   }
   &__buttons-discovery {
     background-color: var(--color-neutral-gray-05);
-    grid-template-columns: 499px 499px;
-    gap: var(--f-gutter-xl);
+    grid-template-columns: 1040px;
     justify-content: center;
-    align-items: center;
     .--flare-block {
-      padding: 34px 0;
       .content {
         .box {
-          padding: 0;
           display: grid;
+          grid-template-columns: 1fr 1fr;
           grid-auto-flow: column;
-          gap: var(--f-gutter);
-          align-items: center;
-
-          p {
-            margin-bottom: 0;
-            font-family: var(--f-mono-text-font);
-            line-height: 20px;
-            a {
-              text-decoration: none;
-              color: var(--color-neutral-black);
-            }
-          }
-        }
-      }
-    }
-    #buttons__discovery-left-button {
-      .content {
-        .box {
-          grid-template-columns: 24px 221px 64px;
-        }
-      }
-    }
-    #buttons__discovery-right-button {
-      .content {
-        .box {
-          grid-template-columns: 61px 221px 24px;
-          justify-content: end;
+          gap: var(--f-gutter-xl);
+          padding: 0;
         }
       }
     }

@@ -191,23 +191,27 @@ En un periodo de 2 a 4 semanas, nuestros equipos multidisciplinarios pueden real
 <!-- Buttons Discovery -->
 <column id="body-index__buttons-discovery" mode="full">
 
-<block id="buttons__discovery-left-button">
+<block>
 
-![Arrow up](./img/arrow-up.svg)
+<nav-button url="/services" arrow="./img/arrow-up.svg" cube="./img/cube-services.png" direction="left">
 
-[Regresar a Servicios](/services)
+<template v-slot:label>
 
-![Mantenimiento](./img/cube-mantenimiento.png)
+Regresar a Servicios
 
-</block>
+</template>
 
-<block id="buttons__discovery-right-button">
+</nav-button>
 
-![Mantenimiento](./img/cube-application-dev.png)
+<nav-button url="/application-development" arrow="./img/arrow-right.svg" cube="./img/cube-application-dev.png" direction="right">
 
-[Application Development](/application-development)
+<template v-slot:label>
 
-![Arrow right](./img/arrow-right.svg)
+Application Development
+
+</template>
+
+</nav-button>
 
 </block>
 
