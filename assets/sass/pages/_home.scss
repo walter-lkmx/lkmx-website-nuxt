@@ -106,40 +106,41 @@
     }
 
     &__vision {
-      text-align: center;
-      background-color: var(--color-neutral-white);
-      @include spacer(l);
-
-      h3 {
-        span {
-          color: var(--color-accent-pink);
-        }
-      }
-    }
-
-    &__circles {
-      text-align: center;
-      background-color: var(--color-accent-blue-01);
-      @include spacer();
-
-      img {
-        display: inline-block;
-      }
-    }
-
-    &__who-we-are {
-      display: grid;
-      align-items: center;
       background-color: var(--color-neutral-black);
-      @include spacer(l);
-
-      &__description {
-        @include gridGap(var(--f-gutter-l));
-
-        p {
-          color: var(--color-neutral-white);
+      display: grid;
+      grid-template-columns: 347px 693px;
+      grid-template-rows: 650px;
+      grid-auto-flow: column;
+      justify-content: center;
+      #vision {
+        &__description {
+          padding-top: 120px;
+          .content {
+            .box {
+              display: grid;
+              gap: var(--f-gutter-l);
+              padding-top: 0;
+              p {
+                color: var(--color-neutral-white);
+                margin-bottom: 0;
+                strong {
+                  font-weight: bolder;
+                }
+              }
+            }
+          }
+        }
+        &__image {
+          .content {
+            .box {
+              img {
+                max-width: unset;
+                height: 438px;
+                transform: translate(1px, 90px);
+              }
+            }
+          }
         }
       }
-
     }
   }

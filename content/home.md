@@ -216,63 +216,21 @@ Industrias como salud, logística, retail, manufactura, blockchain, e-commerce, 
 
 
 <!-- Vision -->
-<column id="body-index__vision" mode="slim">
+<column id="body-index__vision" mode="full" number-s="1" number-m="1">
 
-<block>
+<block id="vision__description">
 
-<h3>Nuestra visión es ser un referente global de <span>tecnología</span>, <span>creatividad</span> e <span>innovación</span>.</h3>
+![E-icon](./img/e-letter.png)
 
-</block>
-
-</column>
-
-
-
-
-
-
-
-
-
-
-
-<!-- Circles -->
-<column id="body-index__circles">
-
-<block>
-
-![LKMX - Visión](./img/vision.svg)
-
-</block>
-
-</column>
-
-
-
-
-
-
-
-
-
-
-
-<!-- Who we are -->
-<column id="body-index__who-we-are" number="2" number-s="1" number-m="1" >
-
-<block id="body-index__who-we-are__description">
-
-![LKMX - Somos ingenieros de desarrollo y de calidad de software, analistas y diseñadores.](./img/icon-sigma.svg)
-
-Somos ingenieros de desarrollo y de calidad de software, analistas y diseñadores. Ágiles, apasionados y orgullosos de nuestra experiencia en proyectos de todos tamaños e industrias. 
+**Somos ingenieros de desarrollo y de calidad de software, analistas y diseñadores.** Ágiles, apasionados y orgullosos de nuestra experiencia en proyectos de todos tamaños e industrias. 
 
 <btn color="pink" text="Hablemos" shortcut="1" url="/"/>
 
 </block>
 
-<block id="body-index__who-we-are__collage">
+<block id="vision__image">
 
-![Somos ingenieros de desarrollo y de calidad de software, analistas y diseñadores](./img/collage-whoweare.png)
+![Who-we-are-image](./img/collage-lets-talk.png)
 
 </block>
 
