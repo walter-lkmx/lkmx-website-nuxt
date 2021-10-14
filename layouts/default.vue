@@ -58,11 +58,11 @@
             </div>
           </div>
           <nav class="simple-footer__content__navigation">
-            <nuxt-link to="/">Servicios</nuxt-link>
-            <nuxt-link to="/">Metodología</nuxt-link>
-            <nuxt-link to="/">Tencnología</nuxt-link>
-            <nuxt-link to="/">Equipo</nuxt-link>
-            <nuxt-link to="/">Contacto</nuxt-link>
+            <nuxt-link to="/services">Servicios</nuxt-link>
+            <nuxt-link to="/methodology">Metodología</nuxt-link>
+            <nuxt-link to="/technology">Tencnología</nuxt-link>
+            <nuxt-link to="/team">Equipo</nuxt-link>
+            <nuxt-link to="/contact">Contacto</nuxt-link>
           </nav>
         </section>
         <section class="simple-footer__legal">
