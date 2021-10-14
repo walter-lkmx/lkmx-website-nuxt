@@ -15,11 +15,13 @@
           />
         </a>
         <div class="logo-container">
-          <img
-            class="header__logo"
-            src="~/assets/img/lkmx-logo.svg"
-            alt="LKMX"
-          />
+          <nuxt-link to="/">
+            <img
+              class="header__logo"
+              src="~/assets/img/lkmx-logo.svg"
+              alt="LKMX"
+            />
+          </nuxt-link>
         </div>
         <nav class="main-navigation">
           <nuxt-link to="/services">Servicios</nuxt-link>
