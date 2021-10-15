@@ -23,7 +23,12 @@ export default {
   display: grid;
   gap: var(--f-gutter-xl);
   grid-auto-flow: column;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 499px 499px;
+    @include respond-to("<=m") {
+      grid-template-columns: 1fr;
+      grid-auto-flow: row;
+      gap: var(--f-gutter);
+  }
   .HelpSectionAppMaintenance__content-side-a, .HelpSectionAppMaintenance__content-side-b {
     display: grid;
     grid-template-rows: 20px 1fr;
@@ -42,6 +47,9 @@ export default {
     p:last-child {
       color: var(--color-neutral-gray-01);
       height: 72px;
+      @include respond-to("<=m") {
+        height: auto;
+      }
     }
   }
 }

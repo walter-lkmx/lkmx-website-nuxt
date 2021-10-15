@@ -22,7 +22,9 @@ export default {
 .HelpSectionDiscovery__content {
   display: grid;
   gap: var(--f-gutter-xl);
-  /* padding: var(--f-gutter); */
+  @include respond-to("<=s") {
+    gap: var(--f-gutter);
+  }
   .HelpSectionDiscovery__content-side-a, .HelpSectionDiscovery__content-side-b {
     display: grid;
     grid-template-rows: 20px 1fr;

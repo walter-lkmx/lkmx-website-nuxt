@@ -22,6 +22,9 @@ export default {
 .HelpSectionAppDevelopment__content {
   display: grid;
   gap: var(--f-gutter-xl);
+  @include respond-to("<=s") {
+    gap: var(--f-gutter);
+  }
   .HelpSectionAppDevelopment__content-side-a, .HelpSectionAppDevelopment__content-side-b {
     display: grid;
     grid-template-rows: 20px 1fr;
@@ -39,6 +42,9 @@ export default {
     p:last-child {
       color: var(--color-neutral-gray-01);
       height: 96px;
+      @include respond-to("<=m") {
+        height: auto;
+      }
     }
   }
 }

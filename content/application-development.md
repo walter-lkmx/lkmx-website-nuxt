@@ -44,7 +44,7 @@ Mediante un entendimiento global de usabilidad, contenido y funcionalidad produc
 
 
 <!-- Help title -->
-<column id="body-index__help-title" mode="full">
+<column id="body-index__help-title--app-development" mode="full" number="1" number-m="1" number-s="1">
 
 <block>
 
@@ -64,7 +64,7 @@ Mediante un entendimiento global de usabilidad, contenido y funcionalidad produc
 
 
 <!-- Help sections -->
-<column id="body-index__help-sections-app-development" mode="full">
+<column id="body-index__help-sections-app-development" mode="full"  number="2" number-m="2" number-s="1">
 
 <block>
 
@@ -164,7 +164,7 @@ De manera regular el equipo va mejorando y simplificando su forma de trabajar. C
 
 
 <!-- Planning Appication Development --> 
-<column id="body-index__planning-app-development" mode="full">
+<column id="body-index__planning-app-development" mode="full" number="2" number-s="1" number-m="1">
 
 <block id="planning__app-development-content">
 
@@ -229,7 +229,7 @@ Application <br> Maintenace & Support
 
 
 <!-- Who we are -->
-<column id="body-index__who-we-are-app-development" mode="full">
+<column id="body-index__who-we-are-app-development" mode="full" number="2" number-s="1" number-m="1">
 
 <block id="who-we-are-description">
 

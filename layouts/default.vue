@@ -248,6 +248,9 @@ export default {
     }
     // background-color: white;
     .content {
+      @include respond-to("<=l") {
+        width: 100%;
+      }
       .box {
         @include grid($g: 40px, $ji: start);
         padding: 0;
@@ -260,14 +263,20 @@ export default {
       color: var(--color-neutral-black);
     }
     &__content {
-      @include grid($g: 0, $ai: start, $gtc: 520px 520px);
+      @include grid($g: 0, $ai: start);
+      @include respond-to(">=xl") {
+        grid-template-columns: 520px 520px;
+      }
       /* @include spacer(m); */
       grid-auto-flow: column;
       /* padding: 0 var(--f-gutter-xxl); */
       justify-self: center;
-      @include respond-to("<=m") {
-        @include grid($g: var(--f-gutter-xxl));
+      @include respond-to("<=l") {
+        @include grid($g: var(--f-gutter-xxl), $gtc: 1fr 1fr);
         grid-auto-flow: row;
+        @include respond-to("<=m") {
+          @include grid($g: var(--f-gutter-xxl));
+        }
       }
       &__brand {
         @include grid($g: var(--f-gutter-l), $ji: start);
@@ -313,9 +322,15 @@ export default {
       }
     }
     &__legal {
-      width: 1040px;
+      @include respond-to(">=xl") {
+        width: 1040px;
+      }
       padding: var(--f-gutter) 0;
       justify-self: center;
+      @include respond-to("<=m") {
+        width: auto;
+        justify-self: start;
+      }
       &-content {
         padding: var(--f-gutter);
       } 

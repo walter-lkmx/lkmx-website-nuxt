@@ -44,6 +44,9 @@ export default {};
     @include respond-to("<=m") { 
       grid-template-columns: 1fr;
       grid-template-rows: 244px 1fr;
+      @include respond-to("<=s") {
+        overflow: hidden;
+      }
     }
   }
   &__side-a {
@@ -69,7 +72,7 @@ export default {};
           height: 264px;
           right: -228px;
           top: 20px;
-          left: unset;
+          left: 0;
         }
       }
     }
@@ -81,7 +84,6 @@ export default {};
     z-index: 2;
     @include respond-to("<=m") {
       padding: 0 var(--f-gutter) var(--f-gutter-xl) var(--f-gutter); 
-      justify-self: end;
       p:last-child {
         font-size: var(--f-default-text-size);
         line-height: var(--f-paragraph-line-height);

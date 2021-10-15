@@ -26,10 +26,16 @@ export default {
   &__hero-app-maintenance {
     .hero-app-maintenance__content {
       display: grid;
-      grid-template-columns: 686px 1fr;
+
       height: max-content;
       margin-top: 50px;
-
+      @include respond-to(">=xl") {
+        grid-template-columns: 686px 1fr;
+      }
+      @include respond-to("<=m") {
+        grid-template-columns: 1fr;
+        margin-top: 0;
+      }      
       .hero-app-maintenance__description-content {
         display: grid;
         gap: 12px;
@@ -47,17 +53,28 @@ export default {
             line-height: var(--f-h3-line-height);
             width: 92%;
             margin-bottom: 0;
+            @include respond-to("<=l") {
+              width: 100%;
+            }
           }
         }
       }
       &--image {
         position: relative;
+        p {
+          padding-bottom: 0;
+        }
         img {
           max-width: unset;
           height: 751px;
           position: absolute;
           transform: translate(-96px, -73px);
           z-index: 20;
+          @include respond-to("<=l") {
+            height: 400px;
+            position: unset;
+            transform: unset;
+          }
         }
       }
     }

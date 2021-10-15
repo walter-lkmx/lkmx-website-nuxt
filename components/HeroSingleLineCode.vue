@@ -18,12 +18,16 @@ export default {
 </script>
 
 <style lang="scss">
+@import "@lkmx/flare/src/functions/_respond-to.scss";
 .HeroSingleLineCode {
   &__content {
     display: grid;
     grid-template-columns: 19px 1fr;
     width: max-content;
     height: 40px;
+    @include respond-to("<=m") {
+      width: 100%;
+    }
     p {
       margin-bottom: 0;
       line-height: 20px;

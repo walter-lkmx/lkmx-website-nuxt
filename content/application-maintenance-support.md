@@ -44,7 +44,7 @@ Al final del desarrollo del proyecto ofrecemos <br> servicios de mantenimiento y
 
 
 <!-- Help title -->
-<column id="body-index__help-title" mode="full">
+<column id="body-index__help-title--app-maintenance" mode="full" number="1" number-m="1" number-s="1">
 
 <block>
 
@@ -64,7 +64,7 @@ Al final del desarrollo del proyecto ofrecemos <br> servicios de mantenimiento y
 
 
 <!-- Help sections -->
-<column id="body-index__help-sections-app-maintenance" mode="full">
+<column id="body-index__help-sections-app-maintenance" mode="full"  number="2" number-m="2" number-s="1">
 
 <block>
 
@@ -78,7 +78,7 @@ Al final del desarrollo del proyecto ofrecemos <br> servicios de mantenimiento y
 
 <template v-slot:description-side-a>
 
-Utilizamos Kanban para gestionar equipos que aunque son  <br>facturados por tiempo y materiales, persiguen objetivos <br>
+Utilizamos Kanban para gestionar equipos que aunque son facturados por tiempo y materiales, persiguen objetivos
 específicos del negocio.
 
 </template>
@@ -91,7 +91,7 @@ específicos del negocio.
 
 <template v-slot:description-side-b>
 
-Para proyectos con el nivel de madurez adecuado, podemos <br>utilizar   waterfall para estimar la implementación de ajustes <br> específicos.
+Para proyectos con el nivel de madurez adecuado, podemos utilizar   waterfall para estimar la implementación de ajustes específicos.
 
 
 
@@ -133,7 +133,7 @@ Para proyectos con el nivel de madurez adecuado, podemos <br>utilizar   waterfal
 
 
 <!-- Planning Appication Maintenance & Support --> 
-<column id="body-index__planning-app-maintenance" mode="full">
+<column id="body-index__planning-app-maintenance" mode="full" number="2" number-s="1" number-m="1">
 
 <block id="planning__app-maintenance-content">
 

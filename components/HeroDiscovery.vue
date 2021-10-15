@@ -26,15 +26,23 @@ export default {
   &__hero-discovery {
     .hero-discovery__content {
       display: grid;
-      grid-template-columns: 533px 507px;
+
       justify-content: end;
       height: max-content;
-
+      @include respond-to(">=xl") {
+        grid-template-columns: 533px 507px;
+      }
+      @include respond-to("<=m") {
+        grid-template-columns: 1fr;
+      }
       .hero-discovery__description-content {
         display: grid;
         gap: 12px;
         padding: var(--f-gutter);
         margin-top: 92px;
+        @include respond-to("<=l") {
+          margin-top: 0;
+        }
         h1 {
           color: var(--color-accent-pink);
           letter-spacing: -1px;
@@ -48,6 +56,9 @@ export default {
             line-height: var(--f-h3-line-height);
             width: 104%;
             margin-bottom: 0;
+            @include respond-to("<=l") {
+              width: 100%;
+            }
           }
         }
       }
@@ -59,6 +70,11 @@ export default {
           transform: translate(18px, -20px);
           position: absolute;
           z-index: 20;
+          @include respond-to("<=l") {
+            height: 300px;
+            position: unset;
+            transform: unset;
+          }
         }
       }
     }

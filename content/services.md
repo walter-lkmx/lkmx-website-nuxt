@@ -4,7 +4,7 @@ description: Learn how to use @nuxt/content.
 ---
 
 <!-- Hero Services -->
-<column id="body-index__hero-services" mode="normal">
+<column id="body-index__hero-services" mode="full">
 
 <block>
 
@@ -210,7 +210,7 @@ de la plataforma.
 
 
 <!-- Who we are -->
-<column id="body-index__who-we-are-services" mode="full">
+<column id="body-index__who-we-are-services" mode="full" number="2" number-s="1" number-m="1">
 
 <block id="who-we-are-description">
 

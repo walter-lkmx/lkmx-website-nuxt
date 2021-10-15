@@ -44,7 +44,7 @@ Nuestras soluciones comienzan mediante el estudio previo de los retos y los obje
 
 
 <!-- Help title -->
-<column id="body-index__help-title" mode="full">
+<column id="body-index__help-title--discovery" mode="full" number="1" number-m="1" number-s="1">
 
 <block>
 
@@ -64,7 +64,7 @@ Nuestras soluciones comienzan mediante el estudio previo de los retos y los obje
 
 
 <!-- Help sections -->
-<column id="body-index__help-sections" mode="full">
+<column id="body-index__help-sections" mode="full" number="2" number-m="2" number-s="1">
 
 <block>
 
@@ -164,7 +164,7 @@ En un periodo de 2 a 4 semanas, nuestros equipos multidisciplinarios pueden real
 
 
 <!-- Planning Discovery --> 
-<column id="body-index__planning-discovery" mode="full">
+<column id="body-index__planning-discovery" mode="full"  number="2" number-s="1" number-m="1">
 
 <block id="planning__discovery-content">
 
@@ -229,7 +229,7 @@ Application Development
 
 
 <!-- Who we are -->
-<column id="body-index__who-we-are-discovery" mode="full">
+<column id="body-index__who-we-are-discovery" mode="full" number="2" number-s="1" number-m="1">
 
 <block id="who-we-are-description">
 

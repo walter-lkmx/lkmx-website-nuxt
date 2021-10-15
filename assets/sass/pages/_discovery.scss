@@ -5,25 +5,33 @@
 #body-index {
   &__hero-discovery {
     background: var(--color-accent-blue-01);
-    grid-template-rows: 581px;
+    @include respond-to(">=xl") {
+      grid-template-rows: 581px;
+    }
     .content {
       .box {
         display: grid;
-        grid-template-columns: 1040px;
+
         padding: 0;
         justify-content: center;
+        @include respond-to(">=xl") {
+          grid-template-columns: 1040px;
+        }
       }
     }
   }
-  &__help-title {
+  &__help-title--discovery {
     height: 126px;
     .content {
       .box {
         display: grid;
-        grid-template-columns: 1040px;
+        grid-template-columns: 1fr;
         padding: 0;
         justify-content: center;
         height: 100%;
+        @include respond-to(">=xl") {
+          grid-template-columns: 1040px;
+        }
         h4 {
           align-self: end;
           padding: var(--f-gutter);
@@ -34,7 +42,13 @@
   }
   &__help-sections {
     display: grid;
-    grid-template-columns: 499px 499px;
+    @include respond-to(">=xl") {
+      grid-template-columns: 499px 499px;
+    }
+    @include respond-to("<=s") {
+      gap: 0;
+      padding-top: var(--f-gutter-xl);
+    }
     justify-content: center;
     gap: var(--f-gutter-xl);
     padding: 0;
@@ -42,6 +56,9 @@
     .content {
       justify-content: center;
       .box {
+        @include respond-to("<=s") {
+          padding-top: 0;
+        }
       }
     }  
   }
@@ -49,7 +66,9 @@
     padding: 0 0;
     justify-content: center;
     display: grid;
-    grid-template-columns: 1040px;
+    @include respond-to(">=xl") {
+      grid-template-columns: 1040px;
+    }
     overflow: hidden;
     .content {
       .box {
@@ -68,8 +87,14 @@
   }
   &__buttons-discovery {
     background-color: var(--color-neutral-gray-05);
-    grid-template-columns: 1040px;
     justify-content: center;
+    padding: 0 200px;
+    @include respond-to(">=xl") {
+      grid-template-columns: 1040px;
+    }
+    @include respond-to("<=l") {
+      padding: 0 var(--f-gutter);
+    }
     .--flare-block {
       .content {
         .box {
@@ -78,12 +103,19 @@
           grid-auto-flow: column;
           gap: var(--f-gutter-xl);
           padding: 0;
+          @include respond-to("<=s") {
+            grid-template-columns: 1fr;
+            grid-auto-flow: row;
+            gap: var(--f-gutter);
+          }
         }
       }
     }
   }
   &__planning-discovery {
-    grid-template-columns: 478px 520px;
+    @include respond-to(">=xl") {
+      grid-template-columns: 478px 520px;
+    }
     justify-content: center;
     gap: var(--f-gutter-xl);
     #planning__discovery-content {
@@ -126,9 +158,27 @@
       .content {
         .box {
           padding: 0;
+          @media screen and(max-width: 1439px) {
+            padding: 0;
+            @include respond-to("<=m") {
+              padding: var(--f-gutter);
+              @include respond-to("<=m") {
+                padding: var(--f-gutter);
+              }
+            }
+          }
           img {
             max-width: unset;
             height: 608px;
+            @media screen and(max-width: 1439px) {
+              max-width: 100%;
+              height: auto;
+              padding: 0;
+            }
+            // @include respond-to("<=l") {
+            //   max-width: 100%;
+            //   height: auto;
+            // }
           }
         }
       }
@@ -137,10 +187,17 @@
   &__who-we-are-discovery {
     background-color: var(--color-neutral-black);
     display: grid;
-    grid-template-columns: 347px 693px;
-    grid-template-rows: 650px;
     grid-auto-flow: column;
     justify-content: center;
+    padding-bottom: 90px;
+    @include respond-to(">=xl") {
+      grid-template-columns: 347px 693px;
+    }
+    @include respond-to("<=m") {
+      padding: var(--f-gutter);
+      grid-auto-flow: row;
+      padding: 0;
+    }
     .--flare-block {
       .content {
         .box {
@@ -176,12 +233,21 @@
       }
     }
     #who-we-are-image {
+      padding-bottom: 90px;
+      @include respond-to("<=m") {
+        padding-bottom: 0;
+      }
       .content {
         .box {
           img {
             max-width: unset;
             height: 438px;
             transform: translate(1px, 90px);
+            @include respond-to("<=m") {
+              height: auto;
+              max-width: 100%;
+              transform: initial;
+            }
           }
         }
       }

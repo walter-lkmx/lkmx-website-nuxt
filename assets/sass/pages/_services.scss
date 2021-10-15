@@ -33,6 +33,9 @@
   }
   &__services-cubes-title {
     height: 158px;
+    @include respond-to("<=m") {
+      height: 130px;
+    }
     .content {
       .box {
         display: grid;
@@ -60,17 +63,33 @@
     grid-template-columns: 1040px;
     justify-content: center;
     overflow: hidden;
+    height: 650px;
+    @include respond-to("<=m") {
+      grid-template-columns: 1fr;
+      height: 300px;
+    }
     .content {
       .box {
         padding: 0;
         position: relative;
-        height: 650px;
+        @include respond-to("<=m") {
+          height: auto;
+        }
         img {
           position: absolute;
           left: -1400px;
           right: 0;
           height: 650px;
           max-width: unset !important;
+          @include respond-to("<=m") {
+              height: 300px;
+              right: 0;
+              left: -500px;
+              @include respond-to("<=s") {
+                height: 300px;
+                left: -700px;
+              }
+          }
         }
       }
     }
@@ -82,9 +101,16 @@
     gap: var(--f-gutter);
     margin-bottom: 100px;
     grid-template-columns: repeat(3, 336px);
+    @include respond-to("<=m") {
+      grid-template-columns: 1fr;
+      padding: var(--f-gutter);
+    }
     .--flare-block {
       .content {
         .box {
+          @include respond-to("<=m") {
+            padding: 0;
+          }
         }
       } 
     }
@@ -92,10 +118,17 @@
   &__who-we-are-services {
     background-color: var(--color-neutral-black);
     display: grid;
-    grid-template-columns: 347px 693px;
-    grid-template-rows: 650px;
     grid-auto-flow: column;
     justify-content: center;
+    padding-bottom: 90px;
+    @include respond-to(">=xl") {
+      grid-template-columns: 347px 693px;
+    }
+    @include respond-to("<=m") {
+      padding: var(--f-gutter);
+      grid-auto-flow: row;
+      padding: 0;
+    }
     .--flare-block {
       .content {
         .box {
@@ -131,12 +164,21 @@
       }
     }
     #who-we-are-image {
+      padding-bottom: 90px;
+      @include respond-to("<=m") {
+        padding-bottom: 0;
+      }
       .content {
         .box {
           img {
             max-width: unset;
             height: 438px;
             transform: translate(1px, 90px);
+            @include respond-to("<=m") {
+              height: auto;
+              max-width: 100%;
+              transform: initial;
+            }
           }
         }
       }
