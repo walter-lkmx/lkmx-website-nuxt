@@ -45,6 +45,12 @@ export default {
           letter-spacing: -1px;
           font-weight: var(--f-h2-text-weight);
           margin-bottom: 0;
+          width: 62%;
+          @include respond-to("<=xs") {
+            font-size: 50px;
+            line-height: 67px;
+            width: 90%;
+          }           
         }
         &--paragraph {
           p {
@@ -55,6 +61,10 @@ export default {
             margin-bottom: 0;
             @include respond-to("<=l") {
               width: 100%;
+              @include respond-to("<=xs") {
+                font-size: var(--f-default-text-size);
+                line-height: var(--f-paragraph-line-height);
+              }
             }
           }
         }

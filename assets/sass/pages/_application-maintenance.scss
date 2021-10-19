@@ -186,6 +186,8 @@
     grid-template-rows: 650px;
     grid-auto-flow: column;
     justify-content: center;
+    padding-bottom: 90px;
+    overflow: hidden;
     .--flare-block {
       .content {
         .box {

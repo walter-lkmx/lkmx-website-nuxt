@@ -27,6 +27,9 @@ export default {
     height: 40px;
     @include respond-to("<=m") {
       width: 100%;
+      @include respond-to("<=xs") {
+        height: auto;
+      }
     }
     p {
       margin-bottom: 0;

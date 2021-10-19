@@ -187,6 +187,7 @@
     grid-auto-flow: column;
     justify-content: center;
     padding-bottom: 90px;
+    overflow: hidden;
     @include respond-to(">=xl") {
       grid-template-columns: 347px 693px;
     }

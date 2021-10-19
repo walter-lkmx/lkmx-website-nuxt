@@ -4,7 +4,7 @@ description: LKMX Website Nuxt
 ---
 
 <!-- Hero Application Dev -->
-<column id="body-index__hero-app-development" mode="full">
+<column id="body-index__hero-app-development" mode="full" number-s="1">
 
 <block>
 
@@ -12,7 +12,7 @@ description: LKMX Website Nuxt
 
 <template v-slot:title>
 
-# Application <br> Development
+# Application Development
 
 </template>
 

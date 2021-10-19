@@ -49,7 +49,7 @@ Desarrollamos plataformas resilientes, intuitivas y seguras para negocios de tod
 
 <!-- Rubbon -->
 
-<column id="body-index__services-rubbon" mode="full">
+<column id="body-index__services-rubbon" mode="full" number="2" number-m="1" number-s="1">
 
 <block>
 

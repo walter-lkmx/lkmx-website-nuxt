@@ -39,8 +39,11 @@ export default {};
 .hero-services {
   &__content {
     display: grid;
-    grid-template-columns: 508px 532px;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
+    @include respond-to(">=xl") {
+      grid-template-columns: 508px 532px;
+    }
     @include respond-to("<=m") { 
       grid-template-columns: 1fr;
       grid-template-rows: 244px 1fr;

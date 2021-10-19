@@ -12,7 +12,7 @@ description: LKMX Website Nuxt
 
 <template v-slot:title>
 
-# Application <br> Maintenance <br> & Support
+# Application Maintenance & Support
 
 </template>
 

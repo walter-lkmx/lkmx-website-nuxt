@@ -1,4 +1,4 @@
-#body-services {
+.services {
   .simple-header {
     height: auto;
   }
@@ -7,9 +7,8 @@
   &__services-rubbon {
     background: var(--color-accent-blue-01); 
     display: grid;
-    grid-template-columns: 508px 532px;
     min-height: max-content;
-    padding: 62px 200px;
+    padding: 62px 0;
     // z-index: 1;
     justify-content: center;
     @include respond-to("<=m") {
@@ -26,6 +25,13 @@
             line-height: 20px;
             margin: 0;
             line-height: var(--f-paragraph-line-height);
+            @include respond-to(">=xl") {
+              max-width: 532px;
+              @include respond-to(">=m") {
+                min-height: 72px;
+                transform: translateX(-10px);
+              }            
+            }
           } 
         }
       } 
@@ -60,12 +66,14 @@
   }
   &__services-diagram {
     display: grid;
-    grid-template-columns: 1040px;
+    grid-template-columns: 1fr;
     justify-content: center;
     overflow: hidden;
     height: 650px;
+    @include respond-to(">=xl") {
+      grid-template-columns: 1040px;
+    }
     @include respond-to("<=m") {
-      grid-template-columns: 1fr;
       height: 300px;
     }
     .content {
@@ -100,7 +108,9 @@
     // padding: 0 auto;
     gap: var(--f-gutter);
     margin-bottom: 100px;
-    grid-template-columns: repeat(3, 336px);
+    @include respond-to(">=xl") {
+      grid-template-columns: repeat(3, 336px);
+    }
     @include respond-to("<=m") {
       grid-template-columns: 1fr;
       padding: var(--f-gutter);
@@ -121,6 +131,7 @@
     grid-auto-flow: column;
     justify-content: center;
     padding-bottom: 90px;
+    overflow: hidden;
     @include respond-to(">=xl") {
       grid-template-columns: 347px 693px;
     }
